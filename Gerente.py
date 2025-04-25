@@ -7,4 +7,4 @@ class Gerente(Funcionario):
         self.__bonus_adicional = bonus_adicional
 
     def calcular_bonus(self):
-        return self.get_salario() * 0.2
+        return self.get_salario() * 0.2 + self.__bonus_adicional
