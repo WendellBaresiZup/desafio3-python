@@ -1,9 +1,11 @@
 class SistemaRH:
 
+    @staticmethod
     def logar_acao(func):
-        def nova_funcaro(Funcionario):
-            print(f"Registrando bonus para um novo funcionario: {Funcionario.get_nome()}")
-            return func(Funcionario)
+        def nova_funcao(self, Funcionario, *args, **kwargs):
+            print(f"Registrando bonus do funcionario: {Funcionario.get_nome()}")
+            return func(self,Funcionario, *args, **kwargs)
+        return nova_funcao
 
     @logar_acao
     def mostrar_bonus(self, Funcionario):
