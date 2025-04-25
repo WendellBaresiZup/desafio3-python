@@ -19,6 +19,3 @@ class Funcionario():
         if salario < 0:
             raise ValueError("O salario nao pode ser nulo!")
         self.__salario = salario
-
-class FuncionarioComum:
-    pass
